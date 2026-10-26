@@ -1,0 +1,956 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Pé na Areia Praia do Morro</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Apartamento de temporada em frente ao Quiosque 12, Praia do Morro, Guarapari. 2 quartos, varanda, estacionamento grátis. Reserve pelo Airbnb.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Montserrat:wght@300;400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: dia de praia — abertura em tela cheia que sobrevoa a baía e entra no apartamento, capítulos claros banhados de sol, 3D no notebook e na galeria */
+:root{
+  --sand:#FAF6EE; --shell:#F2EADB; --white:#FFFFFF;
+  --ink:#0A2630; --ink-2:#36525B; --line:rgba(12,43,54,.12);
+  --sea:#0F7F8A; --sea-2:#13A3A8; --deep:#0A3442; --sun:#EDAE45; --sun-2:#F6CC7A;
+  --aqua:#DCF1EE; --aqua-2:#BCE5E0; --hand:'Caveat', 'Segoe Script', cursive;
+  --serif:'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans:'Montserrat', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --gut:max(16px, env(safe-area-inset-left, 0px)); --gut-r:max(16px, env(safe-area-inset-right, 0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+body{color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--deep)}
+a{color:inherit} img{max-width:100%;display:block}
+::selection{background:var(--sea);color:#fff}
+:focus-visible{outline:2px solid var(--sun);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1280px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gut-r)}
+.eyebrow{font:600 12px/1.2 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--sea)}
+.eyebrow.light{color:var(--sun-2)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1;margin:0;text-wrap:balance;letter-spacing:-.025em;font-optical-sizing:auto}
+h2{font-size:clamp(46px,7.2vw,112px)}
+h2 em,h3 em{font-style:italic;color:var(--sea)}
+p{margin:0}
+.lead{font-size:clamp(17px,1.35vw,19px);font-weight:500;color:var(--ink-2);max-width:58ch}
+section{position:relative}
+
+.btn{--h:56px;display:inline-flex;align-items:center;gap:12px;height:var(--h);padding:0 30px;border-radius:999px;font:700 12.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0;white-space:nowrap;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .3s,background .3s,color .3s}
+.btn svg{width:18px;height:18px}
+.btn-sun{background:linear-gradient(120deg,var(--sun-2),var(--sun));color:#2A1B03;box-shadow:0 14px 40px -12px rgba(237,174,69,.8);position:relative;overflow:hidden}
+.btn-sun::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%);transform:translateX(-120%);animation:shine 3.4s ease-in-out infinite}
+@keyframes shine{0%,55%{transform:translateX(-120%)}85%,100%{transform:translateX(120%)}}
+.btn-sun:hover{transform:translateY(-2px);box-shadow:0 20px 50px -12px rgba(237,174,69,.95)}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.45);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn-glass:hover{background:rgba(255,255,255,.26)}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+
+/* tema praia: areia, sombra de coqueiro, ondas, água */
+body{background-color:var(--sand);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .43 0 0 0 0 .25 0 0 0 .11 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.palms{position:fixed;inset:0;z-index:40;pointer-events:none;mix-blend-mode:multiply;opacity:.13;filter:blur(4px);transition:opacity .8s}
+.palms svg{width:100%;height:100%;display:block}
+.palms g{transform-box:fill-box;animation:sway 9s ease-in-out infinite alternate}
+.palms g:nth-child(2){animation-duration:11s;animation-delay:-3s}
+.palms g:nth-child(3){animation-duration:13s;animation-delay:-6s}
+@keyframes sway{from{transform:rotate(-2.5deg)}to{transform:rotate(3deg)}}
+body.inhero .palms{opacity:0}
+.waved{z-index:2}
+.waved::before{content:"";position:absolute;left:0;right:0;top:1px;height:44px;transform:translateY(-100%);background:var(--wave-bg,var(--sand));pointer-events:none;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='44' viewBox='0 0 1200 44'%3E%3Cpath d='M0 22 Q150 0 300 22 T600 22 T900 22 T1200 22 V44 H0Z'/%3E%3C/svg%3E") repeat-x 0 100% / 1200px 44px;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='44' viewBox='0 0 1200 44'%3E%3Cpath d='M0 22 Q150 0 300 22 T600 22 T900 22 T1200 22 V44 H0Z'/%3E%3C/svg%3E") repeat-x 0 100% / 1200px 44px;animation:wv 16s linear infinite}
+@keyframes wv{to{-webkit-mask-position:1200px 100%;mask-position:1200px 100%}}
+.aqua{background:linear-gradient(180deg,var(--aqua),#EEF8F6 70%,var(--sand));--wave-bg:var(--aqua)}
+.aqua::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.55;mix-blend-mode:soft-light;background:repeating-radial-gradient(circle at 22% 30%,transparent 0 22px,rgba(255,255,255,.9) 25px,transparent 30px),repeating-radial-gradient(circle at 78% 64%,transparent 0 30px,rgba(255,255,255,.8) 33px,transparent 39px);background-size:340px 300px,420px 380px;animation:caust 18s ease-in-out infinite alternate}
+.aqua > *{position:relative;z-index:1}
+@keyframes caust{to{background-position:120px 60px,-140px 90px}}
+
+/* cartões-postais da abertura */
+.intro-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(30px,5vw,80px);align-items:center}
+.cards{position:relative;height:clamp(470px,46vw,640px)}
+.pc{position:absolute;margin:0;background:#fff;padding:12px 12px 52px;border-radius:4px;box-shadow:0 34px 60px -28px rgba(12,43,54,.5);transform:translateY(var(--py,0px)) rotate(var(--r));transition:transform .25s linear}
+.pc img{width:100%;aspect-ratio:4/3;max-width:100%;object-fit:cover;border-radius:2px}
+.pc figcaption{position:absolute;left:16px;right:16px;bottom:10px;font:600 26px/1 var(--hand);color:var(--ink-2);text-align:center}
+.pc1{width:60%;left:0;top:3%;--r:-6deg}
+.pc2{width:56%;right:0;top:34%;--r:5deg}
+.pc3{width:50%;left:16%;bottom:0;--r:-2deg}
+.stamp{position:absolute;top:-28px;right:4%;width:132px;height:132px;z-index:3}
+.stamp svg{width:100%;height:100%;overflow:visible}
+.stamp .ring{transform-origin:66px 66px;animation:spin 24s linear infinite}
+.stamp text{font:700 10.5px var(--sans);letter-spacing:.32em;fill:var(--sea)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.gulls{position:absolute;top:2%;left:46%;width:120px;height:60px;z-index:3;animation:glide 14s ease-in-out infinite alternate}
+.gulls path{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;opacity:.55}
+@keyframes glide{to{transform:translate(-40px,14px)}}
+@media (max-width:900px){.intro-grid{grid-template-columns:1fr}.cards{height:440px;margin-top:20px}.stamp{width:104px;height:104px;top:-34px}.pc{padding:8px 8px 38px}.pc figcaption{font-size:18px;white-space:nowrap;bottom:9px}}
+
+/* nav */
+.nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;color:#fff;transition:background .4s,color .4s,box-shadow .4s}
+.nav.solid{background:rgba(250,246,238,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav .in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px;padding-left:var(--gut);padding-right:var(--gut-r);max-width:1440px;margin:0 auto}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.brand b{font:italic 600 28px/1 var(--serif)}
+.brand small{font:600 9.5px/1 var(--sans);letter-spacing:.3em;opacity:.85;margin-top:5px}
+.nav nav{display:flex;gap:32px}
+.nav nav a{font:600 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;opacity:.88}
+.nav nav a:hover{opacity:1}
+.nav .btn{--h:44px;padding:0 22px;font-size:11px}
+.nav:not(.solid){text-shadow:0 1px 10px rgba(0,0,0,.35)}
+@media (max-width:900px){.nav nav{display:none}.nav .in{height:64px}.brand b{font-size:23px}.brand small{font-size:8.5px;letter-spacing:.18em}.nav .btn{--h:38px;padding:0 15px;font-size:10.5px;letter-spacing:.12em}}
+
+/* HERO tela cheia */
+.hero{height:560vh;background:var(--deep)}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,28,36,.5) 0%,rgba(6,28,36,0) 24%,rgba(6,28,36,0) 55%,rgba(6,28,36,.7) 100%);pointer-events:none}
+.title{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:0 var(--gut-r) 0 var(--gut);will-change:transform,opacity}
+.title .kick{font:600 12.5px/1 var(--sans);letter-spacing:.5em;text-transform:uppercase;margin-bottom:22px;text-shadow:0 2px 16px rgba(0,0,0,.45)}
+.title h1{font-size:clamp(78px,min(15vw,26vh),250px);line-height:.92;letter-spacing:-.03em;padding-bottom:.14em;text-shadow:0 10px 60px rgba(0,0,0,.4)}
+.title h1 span{display:block}
+.title h1 em{font-style:italic;color:var(--sun-2)}
+.title h1 .ln{animation:up 1.4s cubic-bezier(.2,.8,.2,1) both}
+.title h1 .ln:nth-child(2){animation-delay:.15s}
+@keyframes up{from{transform:translateY(30%);opacity:.15;filter:blur(8px)}to{transform:none;opacity:1;filter:none}}
+.title .sub{margin-top:clamp(14px,2vh,28px);font-size:clamp(15px,1.25vw,18px);max-width:52ch;text-shadow:0 2px 18px rgba(0,0,0,.55)}
+.hero-ui{position:absolute;left:0;right:0;bottom:0;padding:0 var(--gut-r) calc(28px + env(safe-area-inset-bottom,0px)) var(--gut);display:flex;justify-content:space-between;align-items:flex-end;gap:20px;color:#fff;max-width:1440px;margin:0 auto}
+.hero-ui .left{display:flex;flex-direction:column;gap:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;background:rgba(255,255,255,.16);box-shadow:inset 0 0 0 1px rgba(255,255,255,.32);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font:600 12px/1 var(--sans);letter-spacing:.04em}
+.chip b{color:var(--sun-2)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px}
+.room-cap{display:flex;flex-direction:column;align-items:flex-end;gap:8px;text-align:right;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+.room-cap span{font:600 11px/1 var(--sans);letter-spacing:.32em}
+.room-cap b{font:italic 600 clamp(30px,3vw,46px)/1 var(--serif)}
+.bar{width:170px;height:2px;background:rgba(255,255,255,.28)}
+.bar i{display:block;height:100%;width:0;background:var(--sun-2)}
+.welcome{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;opacity:0;pointer-events:none;padding:0 var(--gut-r) 0 var(--gut)}
+.welcome h2{font-size:clamp(54px,9vw,150px);text-shadow:0 10px 50px rgba(0,0,0,.45)}
+.welcome h2 em{color:var(--sun-2)}
+@media (max-width:900px){
+  .hero{height:500vh}
+  .title{justify-content:flex-start;padding-top:calc(130px + env(safe-area-inset-top,0px))}
+  .title .sub{display:none}
+  .hero-ui{flex-direction:column;align-items:stretch}
+  .room-cap{align-items:flex-start;text-align:left}
+  .bar{width:100%}
+  .shade{background:linear-gradient(180deg,rgba(6,28,36,.55) 0%,rgba(6,28,36,.08) 30%,rgba(6,28,36,.05) 48%,rgba(6,28,36,.85) 100%)}
+}
+
+/* intro */
+.intro{padding-block:clamp(100px,13vw,180px) clamp(70px,9vw,120px)}
+.intro .big{font:500 clamp(30px,4vw,58px)/1.15 var(--serif);max-width:21ch;margin-top:30px}
+.intro .big .w{color:rgba(10,38,48,.3);transition:color .5s}
+.intro .big .w.on{color:var(--ink)}
+.intro .big .w.hl.on{color:var(--sea);font-style:italic}
+.facts{margin-top:clamp(50px,6vw,90px);display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1.5px solid var(--ink)}
+.fact{padding:24px 14px 0 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.fact b{font:600 clamp(34px,3.6vw,52px)/1 var(--serif)}
+.fact span{font:600 10.5px/1.45 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
+@media (max-width:900px){.facts{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:30px}.fact span{font-size:9.5px;letter-spacing:.08em}}
+
+/* o mar: foto da praia em tela cheia */
+.sea{position:relative;min-height:110svh;display:flex;align-items:flex-end;overflow:hidden;color:#fff;isolation:isolate}
+.sea .bg{position:absolute;inset:-12% 0;z-index:-2}
+.sea .bg img{width:100%;height:100%;object-fit:cover}
+.sea::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,28,36,.2),rgba(6,28,36,0) 30%,rgba(6,28,36,.12) 55%,rgba(6,28,36,.8))}
+.mega{position:absolute;top:13%;left:0;right:0;text-align:center;font:600 clamp(64px,11.5vw,220px)/.85 var(--serif);letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.9);white-space:nowrap;pointer-events:none;text-shadow:0 0 60px rgba(0,0,0,.15)}
+.mega em{font-style:italic;color:#fff;-webkit-text-stroke:0}
+.sea .wrap{width:100%;padding-block:0 clamp(40px,6vw,80px)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.stat{padding:24px 24px 22px;border-radius:18px;background:rgba(255,255,255,.14);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;flex-direction:column;gap:8px;min-width:0}
+.stat b{font:600 clamp(48px,5.6vw,84px)/.9 var(--serif);font-variant-numeric:lining-nums tabular-nums}
+.stat b sup{font-size:.36em;color:var(--sun-2);vertical-align:top;position:relative;top:.25em;margin-left:4px}
+.stat span{font:600 11px/1.45 var(--sans);letter-spacing:.16em;text-transform:uppercase;opacity:.92}
+.credit{position:absolute;right:var(--gut-r);bottom:8px;font-size:10px;opacity:.75;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.7);max-width:70%;text-align:right}
+@media (max-width:900px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat{padding:18px}.sea{min-height:100svh}.mega{top:12%;white-space:normal;font-size:21vw;line-height:.9}.mega em{display:block}}
+
+/* térreo: desça o elevador */
+.ground{padding-block:clamp(90px,11vw,150px)}
+.ground .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:clamp(40px,6vw,90px);align-items:center}
+.ground-copy{display:flex;flex-direction:column;gap:24px;min-width:0}
+.lift{display:flex;align-items:center;gap:18px}
+.lift-screen{width:86px;height:64px;border-radius:10px;background:#141A1C;box-shadow:inset 0 0 0 3px #4C5558,0 14px 30px -14px rgba(12,43,54,.6);display:grid;place-items:center;font:700 40px/1 'Courier New',ui-monospace,monospace;color:#FF3B30;text-shadow:0 0 12px rgba(255,59,48,.75);letter-spacing:.05em}
+.lift span{font:600 11px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.shops{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.shop{grid-column:span 2}
+.shop:nth-child(n+4){grid-column:span 3}
+.shop{position:relative;padding:22px 16px 20px;border-radius:20px;background:rgba(255,255,255,.82);backdrop-filter:blur(6px);display:flex;flex-direction:column;align-items:flex-start;gap:14px;min-width:0;transition:transform .35s,box-shadow .35s}
+.shop:hover{transform:translateY(-5px);box-shadow:0 26px 50px -30px rgba(12,43,54,.5)}
+.shop i{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--white);box-shadow:0 8px 20px -12px rgba(12,43,54,.5)}
+.shop svg{width:26px;height:26px;stroke:var(--sea);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.shop b{font:600 clamp(18px,4.8vw,23px)/1.08 var(--serif);overflow-wrap:anywhere}
+.shop small{font:600 10px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
+.shop .t{position:absolute;top:14px;right:14px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font:700 11px/1 var(--sans);color:#fff;background:var(--sea)}
+@media (max-width:1000px){.ground .wrap{grid-template-columns:1fr}.shops{grid-template-columns:repeat(2,minmax(0,1fr))}.shop,.shop:nth-child(n+4){grid-column:auto}.shop:last-child{grid-column:span 2}}
+
+/* notebook 3D */
+.film{padding-block:clamp(100px,12vw,170px) clamp(60px,8vw,110px);background:linear-gradient(180deg,var(--sand),var(--shell));overflow:hidden}
+.film-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:clamp(40px,5vw,70px)}
+.lap{--open:1;position:relative;width:min(100%,1080px);margin:0 auto;perspective:2200px}
+.lid{position:relative;transform-origin:50% 100%;transform:rotateX(calc((1 - var(--open)) * -88deg));border-radius:22px 22px 6px 6px;padding:2.2% 2.2% 3%;background:linear-gradient(160deg,#2C3538,#11171A);box-shadow:0 50px 100px -40px rgba(12,43,54,.55),inset 0 0 0 1px rgba(255,255,255,.08)}
+.lid::before{content:"";position:absolute;top:1%;left:50%;width:6px;height:6px;border-radius:50%;background:#384447;transform:translateX(-50%)}
+.screen{position:relative;aspect-ratio:16/9;max-width:100%;border-radius:6px;overflow:hidden;background:#000}
+.screen video{width:100%;height:100%;object-fit:contain;display:block;background:#000}
+.base{position:relative;width:116%;margin-left:-8%;height:clamp(14px,2vw,24px);background:linear-gradient(180deg,#D9DEE0,#A7AFB2 60%,#7E878A);border-radius:2px 2px 22px 22px / 2px 2px 14px 14px;box-shadow:0 30px 40px -20px rgba(12,43,54,.5)}
+.base::before{content:"";position:absolute;left:50%;top:0;width:14%;height:42%;transform:translateX(-50%);background:#8D9699;border-radius:0 0 10px 10px}
+.sound{position:absolute;z-index:3;right:14px;bottom:14px;display:flex;align-items:center;gap:8px;padding:10px 15px;border-radius:999px;border:0;background:rgba(12,43,54,.75);backdrop-filter:blur(8px);color:#fff;font:700 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.sound svg{width:16px;height:16px}
+.film-points{margin-top:clamp(50px,6vw,80px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.film-points div{border-top:1.5px solid var(--ink);padding-top:18px;display:flex;flex-direction:column;gap:8px}
+.film-points b{font:600 26px/1.1 var(--serif)}
+.film-points span{color:var(--ink-2);font-size:15px}
+@media (max-width:900px){.film-points{grid-template-columns:1fr;gap:22px}.lid{border-radius:12px 12px 4px 4px}.sound{right:8px;bottom:8px;padding:8px 11px;font-size:9.5px}}
+
+/* ambientes */
+.rooms-head{padding-block:clamp(90px,10vw,140px) 0}
+.rooms-head .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.room{padding-block:clamp(60px,8vw,120px)}
+.room .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;align-items:center}
+.room .pics{grid-column:1 / span 7;position:relative;min-width:0;perspective:1400px}
+.room .copy{grid-column:9 / span 4;display:flex;flex-direction:column;gap:22px;min-width:0}
+.room.flip .pics{grid-column:6 / span 7;order:2}
+.room.flip .copy{grid-column:1 / span 4;order:1}
+.pic-main{position:relative;overflow:hidden;border-radius:20px;aspect-ratio:4/5;max-width:100%;background:var(--shell);box-shadow:0 40px 80px -40px rgba(12,43,54,.45);transform:rotateY(var(--ry,0deg)) rotateX(var(--rx,0deg));transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.pic-main img,.pic-sub img{width:100%;height:100%;object-fit:cover;transform:scale(var(--s,1.12)) translateY(var(--y,0px))}
+.pic-sub{position:absolute;width:44%;aspect-ratio:3/4;right:-10%;bottom:-12%;overflow:hidden;border-radius:16px;box-shadow:0 30px 60px -20px rgba(12,43,54,.5),0 0 0 8px var(--sand)}
+.room.flip .pic-sub{right:auto;left:-10%}
+.room h3{font-size:clamp(46px,5.4vw,86px)}
+.room .tag{font:600 12px/1 var(--sans);letter-spacing:.32em;color:var(--sea);text-transform:uppercase}
+.room ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.room li{padding:13px 0;border-bottom:1px solid var(--line);font-size:15px;display:flex;justify-content:space-between;gap:16px}
+.room li span{color:var(--ink-2);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase}
+@media (max-width:900px){
+  .room .wrap{grid-template-columns:1fr;gap:56px}
+  .room .pics,.room.flip .pics{grid-column:1;order:1;width:88%;margin-bottom:17%}
+  .room.flip .pics{justify-self:end}
+  .room .copy,.room.flip .copy{grid-column:1;order:2}
+  .pic-sub{width:46%;right:-8%;bottom:-10%} .room.flip .pic-sub{left:-8%}
+}
+
+/* galeria carrossel 3D */
+.gal{height:300vh;background:radial-gradient(ellipse at 50% 40%,#11505E,var(--deep) 70%);color:#fff}
+.gal-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(20px,4vh,46px)}
+.gal-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;width:100%}
+.gal-head h2 em{color:var(--sun-2)}
+.ring-wrap{position:relative;height:min(68vh,660px);perspective:1600px}
+.ring{position:absolute;left:50%;top:50%;width:0;height:0;transform-style:preserve-3d}
+.ring button{position:absolute;left:calc(var(--w) / -2);top:calc(var(--h) / -2);width:var(--w);height:var(--h);padding:0;border:0;border-radius:16px;overflow:hidden;cursor:zoom-in;background:#0E3D4C;backface-visibility:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.6)}
+.ring button img{width:100%;height:100%;object-fit:cover}
+.ring button span{position:absolute;left:12px;bottom:10px;font:700 10.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;text-shadow:0 1px 10px rgba(0,0,0,.8)}
+.gal-hint{font-size:13px;color:rgba(255,255,255,.75)}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(5,22,28,.95);display:flex;align-items:center;justify-content:center;padding:calc(60px + env(safe-area-inset-top,0px)) 16px calc(60px + env(safe-area-inset-bottom,0px))}
+.lb[hidden]{display:none}
+.lb img{max-height:100%;max-width:100%;object-fit:contain;border-radius:8px}
+.lb button{position:absolute;border:0;background:rgba(255,255,255,.12);color:#fff;width:52px;height:52px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.lb button svg{width:22px;height:22px}
+.lb .x{top:calc(14px + env(safe-area-inset-top,0px));right:calc(14px + env(safe-area-inset-right,0px))}
+.lb .pv{left:calc(14px + env(safe-area-inset-left,0px));top:50%;transform:translateY(-50%)}
+.lb .nx{right:calc(14px + env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%)}
+.lb .ct{position:absolute;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;font:600 11px/1 var(--sans);letter-spacing:.3em;color:rgba(255,255,255,.75)}
+
+/* localização */
+.loc{padding-block:clamp(100px,12vw,170px)}
+.loc-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:clamp(30px,6vw,90px);align-items:end}
+.bay{margin-top:clamp(50px,6vw,80px);position:relative;border-radius:28px;overflow:hidden;aspect-ratio:21/9;max-width:100%;box-shadow:0 40px 90px -45px rgba(12,43,54,.55)}
+.bay img{width:100%;height:100%;object-fit:cover;transform:scale(var(--s,1.08));transition:transform .2s linear}
+.bay .pin{position:absolute;left:var(--px);top:var(--py);transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center;gap:6px;pointer-events:none}
+.bay .pin b{background:var(--white);color:var(--ink);font:700 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:9px 13px;border-radius:999px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);white-space:nowrap}
+.bay .pin i{width:14px;height:14px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 6px rgba(237,174,69,.35);animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(237,174,69,.6)}100%{box-shadow:0 0 0 18px rgba(237,174,69,0)}}
+.bay .credit{bottom:10px}
+.cut{margin-top:20px;overflow-x:auto;border-radius:24px;background:linear-gradient(180deg,#CFE9EE,#F3E6CC 70%);box-shadow:0 30px 70px -40px rgba(12,43,54,.4)}
+.cut svg{display:block;width:100%;min-width:760px;height:auto}
+.c-bld{fill:#E9E1D2;stroke:#C9BBA2;stroke-width:1.5} .c-win{fill:#9FC3CB} .c-hot{fill:var(--sun)} .c-shop{fill:#D5C7AE}
+.c-road{fill:#5E6B6F} .c-dash{stroke:#fff;stroke-dasharray:14 12;stroke-width:2;opacity:.8}
+.c-sand{fill:#EBCF98} .c-sea{fill:var(--sea)} .c-sea2{fill:var(--sea-2);opacity:.6} .c-wave{fill:none;stroke:#fff;stroke-width:2;opacity:.7}
+.c-kiosk{fill:#B5823A} .c-path{fill:none;stroke:var(--ink);stroke-width:2;stroke-dasharray:2 9;stroke-linecap:round}
+.c-sun{fill:var(--sun-2)} .c-lbl{fill:var(--ink);font:700 13px var(--sans);letter-spacing:.16em}
+.c-sm{fill:var(--ink-2);font:600 12px var(--sans)} .c-ser{fill:var(--ink);font:italic 600 28px var(--serif)}
+.near{margin-top:20px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.near div{padding:22px;border-radius:18px;background:var(--white);box-shadow:0 20px 50px -35px rgba(12,43,54,.4);display:flex;flex-direction:column;gap:8px;min-width:0}
+.near b{font:600 26px/1.05 var(--serif)}
+.near span{font-size:13.5px;color:var(--ink-2)}
+.loc-pics{margin-top:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.loc-pics figure{margin:0;position:relative;overflow:hidden;border-radius:20px;aspect-ratio:4/3;background:var(--shell)}
+.loc-pics img{width:100%;height:100%;object-fit:cover}
+.loc-pics figcaption{position:absolute;left:16px;bottom:14px;color:#fff;font:700 10.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;text-shadow:0 1px 10px rgba(0,0,0,.9)}
+@media (max-width:900px){.loc-top{grid-template-columns:1fr}.near{grid-template-columns:repeat(2,minmax(0,1fr))}.loc-pics{grid-template-columns:1fr}.bay{aspect-ratio:4/3}}
+
+/* do sofá à areia: trilha de pegadas */
+.walk{margin-top:20px;position:relative;overflow:hidden;border-radius:28px;padding:clamp(28px,4vw,52px) clamp(18px,3vw,44px) 128px;background:linear-gradient(180deg,#FFFFFF,#F7F0E3);box-shadow:0 34px 80px -45px rgba(12,43,54,.5)}
+.walk-head{display:flex;flex-direction:column;gap:14px}
+.walk-head h3{font-size:clamp(34px,4.2vw,60px)}
+.feet{display:block;width:100%;height:auto;margin:22px 0 10px;border-radius:60px;background:linear-gradient(90deg,rgba(235,207,152,0),rgba(235,207,152,.55) 12%,rgba(235,207,152,.55) 88%,rgba(235,207,152,0))}
+.feet .print{fill:#7A5A2E;opacity:0}
+.walk.in .feet .print{animation:print .5s ease forwards;animation-delay:var(--d)}
+@keyframes print{to{opacity:.75}}
+.walk-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;position:relative;z-index:1}
+.walk-steps li{display:flex;flex-direction:column;gap:9px;min-width:0;transform:translateY(calc(var(--i) * 10px))}
+.walk-steps figure{margin:0;position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;max-width:100%;box-shadow:0 22px 40px -24px rgba(12,43,54,.55);background:var(--shell)}
+.walk-steps img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.walk-steps li:hover img{transform:scale(1.06)}
+.walk-steps .n{position:absolute;left:12px;top:12px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--sea);color:#fff;font:700 14px/1 var(--sans);box-shadow:0 6px 14px -6px rgba(0,0,0,.5)}
+.walk-steps b{font:600 21px/1.15 var(--serif)}
+.walk-steps span:not(.n){font-size:13.5px;line-height:1.45;color:var(--ink-2)}
+.walk-ground{position:absolute;left:0;right:0;bottom:0;height:52px;display:grid;grid-template-columns:58fr 9fr 25fr 8fr}
+.walk-ground i{display:flex;align-items:flex-end;justify-content:center;padding-bottom:9px;font:700 10px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;font-style:normal}
+.g-bld{background:#E9E1D2;color:var(--ink-2)}
+.g-road{background:#5E6B6F;color:#fff;background-image:linear-gradient(90deg,transparent 45%,rgba(255,255,255,.85) 45% 55%,transparent 55%);background-size:100% 3px;background-repeat:no-repeat;background-position:0 22px}
+.g-sand{background:#EBCF98;color:#7A5A22}
+.g-sea{background:var(--sea);color:#fff;position:relative;overflow:hidden}
+.g-sea::before{content:"";position:absolute;inset:0 -40px;background:radial-gradient(circle at 10px -4px,transparent 12px,rgba(255,255,255,.5) 13px,transparent 15px) 0 0/28px 20px repeat-x;animation:foam 3s linear infinite}
+@keyframes foam{to{transform:translateX(28px)}}
+@media (max-width:900px){
+  .feet{display:none}
+  .walk{padding-bottom:84px}
+  .walk-steps{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:70%;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 2px 14px;margin-top:6px;scrollbar-width:none}
+  .walk-steps::-webkit-scrollbar{display:none}
+  .walk-steps li{scroll-snap-align:start;transform:none}
+  .walk-ground{grid-template-columns:40fr 14fr 30fr 16fr}
+}
+
+/* comodidades */
+.amen{padding-block:clamp(90px,11vw,150px)}
+.amen-grid{margin-top:50px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.am{padding:26px 22px;border-radius:18px;background:rgba(255,255,255,.82);backdrop-filter:blur(6px);display:flex;flex-direction:column;gap:12px;min-width:0;transition:transform .35s,box-shadow .35s}
+.am:hover{transform:translateY(-4px);box-shadow:0 24px 50px -30px rgba(12,43,54,.45)}
+.am svg{width:30px;height:30px;stroke:var(--sea);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.am b{font:600 15px/1.3 var(--sans)}
+.am span{font-size:13px;color:var(--ink-2);line-height:1.5}
+@media (max-width:1000px){.amen-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.am{padding:20px 16px}}
+
+/* avaliações */
+.reviews{padding-block:clamp(100px,12vw,160px);background:linear-gradient(160deg,var(--deep),#0D5560 70%,var(--sea));color:#fff;overflow:hidden}
+.reviews .eyebrow{color:var(--sun-2)}
+.reviews-top{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(40px,7vw,100px);align-items:start}
+.score{display:flex;align-items:flex-end;gap:18px}
+.score b{font:600 clamp(110px,14vw,200px)/.8 var(--serif);letter-spacing:-.03em}
+.score div{display:flex;flex-direction:column;gap:6px;padding-bottom:10px}
+.score .stars{color:var(--sun-2);letter-spacing:.2em;font-size:18px}
+.score span{font-size:13px;opacity:.85}
+.bars{display:grid;gap:16px}
+.br{display:grid;grid-template-columns:150px minmax(0,1fr) 40px;gap:16px;align-items:center;font-size:14px}
+.br span{opacity:.85}
+.br i{height:4px;background:rgba(255,255,255,.15);border-radius:4px;overflow:hidden;display:block}
+.br i::after{content:"";display:block;height:100%;width:var(--v);background:linear-gradient(90deg,var(--sun),var(--sun-2));border-radius:4px}
+.br b{font:600 22px/1 var(--serif);text-align:right}
+.quotes{margin-top:clamp(56px,7vw,90px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.q{margin:0;padding:30px;border-radius:22px;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);display:flex;flex-direction:column;gap:22px;justify-content:space-between;min-width:0}
+.q p{font:italic 500 clamp(20px,1.7vw,24px)/1.36 var(--serif)}
+.q p::before{content:"“";display:block;font:400 64px/.6 var(--serif);color:var(--sun-2);margin-bottom:14px;font-style:normal}
+.q footer{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:12.5px;border-top:1px solid rgba(255,255,255,.2);padding-top:16px;opacity:.92}
+.q footer b{font-weight:700}
+.q footer .s{color:var(--sun-2);letter-spacing:.1em}
+.q.big{grid-column:span 2;background:rgba(255,255,255,.96);color:var(--ink)}
+.q.big p{font-size:clamp(26px,2.6vw,38px)}
+.q.big p::before{color:var(--sun)}
+.q.big footer{border-color:var(--line)}
+.q.big footer .s{color:var(--sun)}
+.reviews .btn-line{color:#fff;box-shadow:inset 0 0 0 1.5px #fff}
+.reviews .btn-line:hover{background:#fff;color:var(--ink)}
+@media (max-width:1000px){.reviews-top{grid-template-columns:1fr}.quotes{grid-template-columns:1fr}.q.big{grid-column:auto}.br{grid-template-columns:120px minmax(0,1fr) 36px}}
+
+/* anfitrião + faq */
+.host{padding-block:clamp(100px,12vw,160px)}
+.host .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,100px)}
+.host-card{display:flex;flex-direction:column;gap:26px}
+.host-id{display:flex;align-items:center;gap:20px}
+.avatar{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--sea-2),var(--sea));color:#fff;font:italic 600 40px/1 var(--serif);flex:none}
+.host-id b{font:600 34px/1 var(--serif);display:block}
+.host-id span{font-size:13px;color:var(--ink-2)}
+.kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1.5px solid var(--ink)}
+.kv div{padding:18px 12px 0 0;display:flex;flex-direction:column;gap:4px;min-width:0}
+.kv b{font:600 28px/1 var(--serif)}
+.kv span{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;position:relative;font:600 clamp(21px,1.8vw,26px)/1.25 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;margin-top:-7px;background:linear-gradient(var(--sea),var(--sea)) center/14px 2px no-repeat,linear-gradient(var(--sea),var(--sea)) center/2px 14px no-repeat;transition:transform .35s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 30px 24px 0;color:var(--ink-2);font-size:15.5px;max-width:60ch}
+@media (max-width:900px){.host .wrap{grid-template-columns:1fr}}
+
+/* final */
+.final{position:relative;min-height:min(100svh,960px);display:grid;place-items:center;text-align:center;overflow:hidden;isolation:isolate;color:#fff}
+.final .bg{position:absolute;inset:-10% 0;z-index:-2}
+.final .bg img{width:100%;height:100%;object-fit:cover}
+.final::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at center,rgba(6,28,36,.25),rgba(6,28,36,.7) 80%)}
+.final .wrap{display:flex;flex-direction:column;align-items:center;gap:28px;padding-block:130px}
+.final h2{font-size:clamp(58px,9.5vw,160px);max-width:12ch;text-shadow:0 10px 50px rgba(0,0,0,.4)}
+.final h2 em{color:var(--sun-2)}
+.final .lead{color:rgba(255,255,255,.92);text-align:center}
+footer.ft{background:var(--deep);color:rgba(255,255,255,.78);padding-block:36px calc(110px + env(safe-area-inset-bottom,0px));font-size:12.5px}
+footer.ft .wrap{display:flex;flex-direction:column;gap:14px}
+footer.ft .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer.ft small{opacity:.75;font-size:11px;line-height:1.6}
+footer.ft small a{color:inherit}
+@media (min-width:901px){footer.ft{padding-bottom:36px}}
+
+.stickbar{position:fixed;z-index:55;left:0;right:0;bottom:0;padding:12px var(--gut-r) calc(12px + env(safe-area-inset-bottom,0px)) var(--gut);background:rgba(250,246,238,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 -1px 0 var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px;transform:translateY(110%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.stickbar.on{transform:none}
+.stickbar div{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.stickbar b{font:italic 600 21px/1.1 var(--serif)}
+.stickbar span{font-size:11.5px;color:var(--ink-2)}
+.stickbar .btn{--h:48px;padding:0 20px;font-size:11px}
+@media (min-width:901px){.stickbar{display:none}}
+
+/* trilha da praia */
+.radio{position:fixed;z-index:56;right:max(16px,env(safe-area-inset-right,0px));top:calc(88px + env(safe-area-inset-top,0px));display:flex;align-items:center;gap:12px;padding:7px 10px 7px 7px;border-radius:999px;background:rgba(10,52,66,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;box-shadow:0 16px 40px -14px rgba(0,0,0,.55),inset 0 0 0 1px rgba(255,255,255,.12);transition:bottom .45s cubic-bezier(.2,.8,.2,1)}
+@media (max-width:900px){.radio{top:calc(74px + env(safe-area-inset-top,0px))}}
+.radio button{border:0;cursor:pointer;display:grid;place-items:center;color:inherit;background:none;padding:0}
+.r-play{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--sun-2),var(--sun))!important;color:#2A1B03!important;flex:none}
+.r-play svg{width:18px;height:18px}
+.r-next{width:34px;height:34px;border-radius:50%;opacity:.8}
+.r-next:hover{opacity:1;background:rgba(255,255,255,.1)}
+.r-next svg{width:16px;height:16px}
+.r-info{display:flex;flex-direction:column;line-height:1.15;min-width:0}
+.r-info small{font:600 9.5px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+.r-info b{font:600 15px/1.2 var(--serif);white-space:nowrap}
+.r-eq{display:flex;align-items:flex-end;gap:3px;height:18px;width:22px}
+.r-eq i{flex:1;background:var(--sun-2);border-radius:2px;height:20%;transition:height .3s}
+.radio.playing .r-eq i{animation:eq 1s ease-in-out infinite alternate}
+.radio.playing .r-eq i:nth-child(2){animation-delay:-.35s;animation-duration:.8s}
+.radio.playing .r-eq i:nth-child(3){animation-delay:-.6s;animation-duration:1.15s}
+.radio.playing .r-eq i:nth-child(4){animation-delay:-.2s;animation-duration:.9s}
+@keyframes eq{0%{height:15%}100%{height:100%}}
+.r-tip{position:absolute;right:0;top:calc(100% + 10px);white-space:nowrap;padding:9px 13px;border-radius:12px;background:#fff;color:var(--ink);font:600 12.5px/1.2 var(--sans);box-shadow:0 12px 30px -12px rgba(0,0,0,.4);opacity:0;transform:translateY(-6px);transition:opacity .4s,transform .4s;pointer-events:none}
+.r-tip::after{content:"";position:absolute;right:22px;bottom:100%;border:7px solid transparent;border-bottom-color:#fff}
+.radio.tip .r-tip{opacity:1;transform:none}
+@media (max-width:520px){.r-info small{display:none}.r-info b{font-size:14px}}
+
+.rv{transform:translateY(26px);opacity:.35;transition:transform 1.1s cubic-bezier(.2,.8,.2,1),opacity 1.1s}
+.rv.in{transform:none;opacity:1}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{transform:none;opacity:1}.lap{--open:1!important}}
+</style>
+
+<header class="nav" id="nav">
+  <div class="in">
+    <a class="brand" href="#top" aria-label="Pé na Areia, início"><b>Pé na Areia</b><small>PRAIA DO MORRO · GUARAPARI</small></a>
+    <nav aria-label="Seções"><a href="#tour">Filme</a><a href="#ambientes">Ambientes</a><a href="#localizacao">Localização</a><a href="#avaliacoes">Avaliações</a></nav>
+    <a class="btn btn-sun" href="https://airbnb.com.br/h/leila201" target="_blank" rel="noopener">Reservar</a>
+  </div>
+</header>
+
+<div class="palms" aria-hidden="true"><svg id="palms" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice"></svg></div>
+<main id="top">
+<section class="hero" id="hero" aria-label="Da Praia do Morro até a sua varanda">
+  <div class="stage">
+    <canvas id="seq" aria-label="Voo de câmera sobre a Praia do Morro até dentro do apartamento"></canvas>
+    <div class="shade"></div>
+    <div class="title" id="title">
+      <p class="kick">Praia do Morro · Guarapari</p>
+      <h1><span class="ln">A praia</span><span class="ln"><em>logo ali.</em></span></h1>
+      <p class="sub">Apartamento inteiro em prédio na orla, em frente ao Quiosque 12. Atravesse a rua e seus pés já estão na areia.</p>
+    </div>
+    <div class="welcome" id="welcome"><h2>Bem-vindo à <em>sua varanda.</em></h2></div>
+    <div class="hero-ui">
+      <div class="left">
+        <div class="chips"><span class="chip"><b>★ 4,65</b> 26 avaliações</span><span class="chip">5 hóspedes · 2 quartos · 2 banheiros</span></div>
+        <div class="cta-row">
+          <a class="btn btn-sun" href="https://airbnb.com.br/h/leila201" target="_blank" rel="noopener">Ver datas e preços <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-glass" href="#tour"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Assistir ao filme</a>
+        </div>
+      </div>
+      <div class="room-cap"><span id="capn">ROLE PARA ENTRAR</span><b id="capt">A baía</b><div class="bar"><i id="prog"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="intro waved" aria-label="O apartamento">
+  <div class="wrap">
+    <div class="intro-grid">
+    <div>
+    <p class="eyebrow">O apartamento</p>
+    <p class="big" id="big">Acorde sem pressa. Desça o elevador e o supermercado, a farmácia e o banco estão ali no térreo. Atravesse a rua, e seus pés já estão na areia da Praia do Morro.</p>
+    </div>
+    <div class="cards" id="cards" aria-label="Cartões-postais da Praia do Morro">
+      <figure class="pc pc1" data-k="1"><img src="beach/beach6.webp" alt="Orla da Praia do Morro pela manhã, com a areia e os prédios ao fundo" loading="lazy"><figcaption>bom dia, Guarapari!</figcaption></figure>
+      <figure class="pc pc2" data-k="-.6"><img src="beach/beach5.webp" alt="Areia e ondas da Praia do Morro com o Morro da Pescaria ao fundo" loading="lazy"><figcaption>mar de águas calmas</figcaption></figure>
+      <figure class="pc pc3" data-k=".4"><img src="beach/beach3.webp" alt="Pôr do sol dourado sobre a Praia do Morro" loading="lazy"><figcaption>e que pôr do sol…</figcaption></figure>
+      <div class="stamp" aria-hidden="true"><svg viewBox="0 0 132 132"><defs><path id="cir" d="M66 66 m-50 0 a50 50 0 1 1 100 0 a50 50 0 1 1 -100 0"/></defs><circle cx="66" cy="66" r="62" fill="#fff" stroke="var(--sea)" stroke-width="1.5" stroke-dasharray="3 4"/><g class="ring"><text><textPath href="#cir">PRAIA DO MORRO · GUARAPARI · ES ·</textPath></text></g><circle cx="66" cy="66" r="16" fill="var(--sun-2)"/><g stroke="var(--sun)" stroke-width="2.5" stroke-linecap="round"><path d="M66 38v6M66 88v6M38 66h6M88 66h6M46 46l4 4M82 82l4 4M86 46l-4 4M50 82l-4 4"/></g></svg></div>
+      <svg class="gulls" viewBox="0 0 120 60" aria-hidden="true"><path d="M10 30 q8 -9 16 0 q8 -9 16 0"/><path d="M60 14 q6 -7 12 0 q6 -7 12 0"/><path d="M78 40 q5 -6 10 0 q5 -6 10 0"/></svg>
+    </div>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>5</b><span>Hóspedes</span></div>
+      <div class="fact"><b>2</b><span>Quartos de casal</span></div>
+      <div class="fact"><b>2</b><span>Banheiros</span></div>
+      <div class="fact"><b>1</b><span>Varanda com rede</span></div>
+      <div class="fact"><b>24h</b><span>Portaria</span></div>
+      <div class="fact"><b>Grátis</b><span>Estacionamento</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sea" aria-label="A Praia do Morro">
+  <div class="bg" id="seabg"><img src="beach/beach1.webp" alt="Areia, mar e prédios da orla da Praia do Morro em dia de sol" loading="lazy"></div>
+  <div class="mega" aria-hidden="true">Praia <em>do Morro</em></div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b data-count="4.65" data-dec="2">4,65<sup>★</sup></b><span>Nota geral dos hóspedes</span></div>
+      <div class="stat"><b data-count="5.0" data-dec="1">5,0</b><span>Nota para localização</span></div>
+      <div class="stat"><b data-count="4.8" data-dec="1">4,8</b><span>Check-in e comunicação</span></div>
+      <div class="stat"><b data-count="26" data-dec="0">26</b><span>Avaliações no Airbnb</span></div>
+    </div>
+  </div>
+  <span class="credit">Foto: Gutoaz, CC BY 4.0, Wikimedia Commons</span>
+</section>
+
+<section class="ground aqua waved" aria-label="Comércio no térreo do prédio">
+  <div class="wrap">
+    <div class="ground-copy rv">
+      <p class="eyebrow">No térreo do prédio</p>
+      <h2>Desça o elevador. <em>Está tudo aqui.</em></h2>
+      <p class="lead">Sem carro e sem fila de estacionamento: o essencial da sua temporada fica embaixo do apartamento.</p>
+      <div class="lift"><div class="lift-screen" id="liftnum" aria-hidden="true">T</div><span>Do seu andar<br>ao térreo</span></div>
+    </div>
+    <div class="shops">
+      <div class="shop"><span class="t">T</span><i><svg viewBox="0 0 32 32"><path d="M3 5h4l3 15h15l3-10H9"/><circle cx="12" cy="26" r="2"/><circle cx="23" cy="26" r="2"/></svg></i><b>Supermercado Extrabom</b><small>Compras do dia a dia</small></div>
+      <div class="shop"><span class="t">T</span><i><svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="5"/><path d="M16 10v12M10 16h12"/></svg></i><b>Farmácia</b><small>Protetor e remédios</small></div>
+      <div class="shop"><span class="t">T</span><i><svg viewBox="0 0 32 32"><path d="M4 12l12-7 12 7M6 12v12M12 12v12M20 12v12M26 12v12M3 27h26"/></svg></i><b>Banco</b><small>Caixa eletrônico</small></div>
+      <div class="shop"><span class="t">T</span><i><svg viewBox="0 0 32 32"><path d="M5 9h22v4a3 3 0 0 0 0 6v4H5v-4a3 3 0 0 0 0-6z"/><path d="M13 9v14" stroke-dasharray="2 3"/></svg></i><b>Lotérica</b><small>Pagamentos e apostas</small></div>
+      <div class="shop"><span class="t">T</span><i><svg viewBox="0 0 32 32"><path d="M13 4h6v5l3 4v14a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1V13l3-4z"/><path d="M10 17h12"/></svg></i><b>Distribuidora</b><small>Bebidas para a praia</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="film" id="tour" aria-label="Filme do apartamento">
+  <div class="wrap">
+    <div class="film-head">
+      <div style="display:flex;flex-direction:column;gap:22px"><p class="eyebrow">O filme</p><h2>Conheça cada canto <em>em 42 segundos.</em></h2></div>
+      <a class="btn btn-sun" href="https://airbnb.com.br/h/leila201" target="_blank" rel="noopener">Quero reservar</a>
+    </div>
+    <div class="lap" id="lap">
+      <div class="lid">
+        <div class="screen">
+          <video id="vid" src="video/tour169.mp4" poster="video/poster169.jpg" muted loop playsinline preload="metadata"></video>
+          <button class="sound" id="sound" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path id="sw" d="M17 9l4 6M21 9l-4 6"/></svg><span id="soundt">Ativar som</span></button>
+        </div>
+      </div>
+      <div class="base"></div>
+    </div>
+    <div class="film-points">
+      <div><b>Portaria renovada</b><span>Acesso digital, elevador e segurança 24h.</span></div>
+      <div><b>Sala e varanda</b><span>Integradas, com mesa para quatro e rede.</span></div>
+      <div><b>Dois quartos</b><span>Suíte e segundo quarto, ambos com cama de casal.</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="rooms-head" id="ambientes">
+  <div class="wrap">
+    <div style="display:flex;flex-direction:column;gap:22px"><p class="eyebrow">Ambientes</p><h2>Espaço para <em>respirar.</em></h2></div>
+    <p class="lead" style="max-width:40ch">Os hóspedes descrevem o apartamento como amplo e arejado. Veja por quê.</p>
+  </div>
+</div>
+<article class="room" aria-label="Sala de estar"><div class="wrap">
+  <div class="pics"><div class="pic-main" data-tilt><img src="img/p38.webp" alt="Sala com painel de TV e porta de vidro aberta para a varanda" loading="lazy" data-par></div><div class="pic-sub"><img src="img/p17.webp" alt="Sofá com chaise e porta para a varanda" loading="lazy" data-par></div></div>
+  <div class="copy rv"><span class="tag">Sala de estar</span><h3>O dia começa <em>aqui.</em></h3><p class="lead">Sofá com chaise, TV e uma porta de vidro que se abre direto para a varanda. Luz natural o dia todo.</p><ul><li>Sofá com chaise <span>Sala</span></li><li>TV e Wi-Fi <span>Lazer</span></li><li>Ventilador de teto <span>Conforto</span></li></ul></div>
+</div></article>
+<article class="room flip" aria-label="Sala de jantar"><div class="wrap">
+  <div class="pics"><div class="pic-main" data-tilt><img src="img/p49.webp" alt="Mesa de jantar de granito com seis cadeiras, ao lado da sala de estar" loading="lazy" data-par></div><div class="pic-sub"><img src="img/p48.webp" alt="Mesa de jantar vista da sala, com o sofá e a porta da varanda ao fundo" loading="lazy" data-par></div></div>
+  <div class="copy rv"><span class="tag">Sala de jantar</span><h3>Mesa para <em>seis.</em></h3><p class="lead">Mesa de granito com seis cadeiras, integrada à sala de estar e com a varanda ao fundo. Espaço para reunir a família depois da praia.</p><ul><li>Mesa com 6 cadeiras <span>Refeições</span></li><li>Ventilador de teto <span>Conforto</span></li><li>Integrada à sala <span>Ambiente</span></li></ul></div>
+</div></article>
+<article class="room" aria-label="Cozinha"><div class="wrap">
+  <div class="pics"><div class="pic-main" data-tilt><img src="img/p46.webp" alt="Cozinha com armários brancos, cooktop a gás, pia e bancada de granito" loading="lazy" data-par></div><div class="pic-sub"><img src="img/p47.webp" alt="Cozinha com geladeira, armários com taças e bancada com micro-ondas" loading="lazy" data-par></div></div>
+  <div class="copy rv"><span class="tag">Cozinha</span><h3>Completa e <em>equipada.</em></h3><p class="lead">Fogão a gás, geladeira, micro-ondas, cafeteira e liquidificador, com armários cheios de pratos, copos e taças para cozinhar no seu ritmo.</p><ul><li>Fogão a gás <span>Cozinha</span></li><li>Geladeira e micro-ondas <span>Eletros</span></li><li>Louças e taças <span>Utensílios</span></li></ul></div>
+</div></article>
+<article class="room flip" aria-label="Varanda"><div class="wrap">
+  <div class="pics"><div class="pic-main" data-tilt><img src="img/p16.webp" alt="Varanda com mesa e quatro cadeiras" loading="lazy" data-par></div><div class="pic-sub"><img src="img/p13.webp" alt="Varanda com tela de proteção" loading="lazy" data-par></div></div>
+  <div class="copy rv"><span class="tag">Varanda</span><h3>Café da manhã <em>ao ar livre.</em></h3><p class="lead">Mesa para quatro, rede para a tarde preguiçosa e tela de proteção em toda a volta, tranquilidade para quem viaja com crianças.</p><ul><li>Mesa com 4 cadeiras <span>Refeições</span></li><li>Rede <span>Descanso</span></li><li>Tela de proteção <span>Segurança</span></li></ul></div>
+</div></article>
+<article class="room" aria-label="Suíte"><div class="wrap">
+  <div class="pics"><div class="pic-main" data-tilt><img src="img/p8.webp" alt="Suíte com cama de casal e guarda-roupa" loading="lazy" data-par></div><div class="pic-sub"><img src="img/p24.webp" alt="Suíte vista da porta, com guarda-roupa de três portas" loading="lazy" data-par></div></div>
+  <div class="copy rv"><span class="tag">Suíte</span><h3>Noites de <em>puro descanso.</em></h3><p class="lead">Cama de casal, guarda-roupa amplo, TV, ventilador de teto e banheiro privativo. Uma hóspede elogiou a cama da suíte como confortável.</p><ul><li>Cama de casal <span>Quarto 1</span></li><li>Banheiro privativo <span>Suíte</span></li><li>TV e ventilador de teto <span>Conforto</span></li></ul></div>
+</div></article>
+<article class="room flip" aria-label="Segundo quarto"><div class="wrap">
+  <div class="pics"><div class="pic-main" data-tilt><img src="img/p11.webp" alt="Segundo quarto com cama de casal" loading="lazy" data-par></div><div class="pic-sub"><img src="img/p12.webp" alt="Segundo quarto, outro ângulo" loading="lazy" data-par></div></div>
+  <div class="copy rv"><span class="tag">Segundo quarto</span><h3>Espaço para <em>a família.</em></h3><p class="lead">Mais uma cama de casal, ventilador de teto e cortinas blackout para dormir até tarde depois de um dia de praia.</p><ul><li>Cama de casal <span>Quarto 2</span></li><li>Cortinas blackout <span>Sono</span></li><li>Sofá na sala <span>5º hóspede</span></li></ul></div>
+</div></article>
+<article class="room" aria-label="Banheiros"><div class="wrap">
+  <div class="pics"><div class="pic-main" data-tilt><img src="img/p10.webp" alt="Banheiro com box de vidro" loading="lazy" data-par></div><div class="pic-sub"><img src="img/p9.webp" alt="Bancada de granito com espelho" loading="lazy" data-par></div></div>
+  <div class="copy rv"><span class="tag">Banheiros</span><h3>Dois banheiros <em>completos.</em></h3><p class="lead">Box de vidro, bancada em granito, espelho amplo e água quente nos dois banheiros.</p><ul><li>2 banheiros completos <span>Banho</span></li><li>Água quente <span>Chuveiro</span></li><li>Bancada em granito <span>Acabamento</span></li></ul></div>
+</div></article>
+
+<section class="gal" id="galeria" aria-label="Galeria 3D">
+  <div class="gal-stage">
+    <div class="wrap gal-head">
+      <div style="display:flex;flex-direction:column;gap:20px"><p class="eyebrow light">Galeria</p><h2>Gire e veja <em>cada detalhe.</em></h2></div>
+      <p class="gal-hint">Role para girar · toque numa foto para ampliar</p>
+    </div>
+    <div class="ring-wrap"><div class="ring" id="ring"></div></div>
+  </div>
+</section>
+
+<section class="loc waved" id="localizacao" aria-label="Localização">
+  <div class="wrap">
+    <div class="loc-top">
+      <div style="display:flex;flex-direction:column;gap:24px"><p class="eyebrow">Localização · nota 5,0</p><h2>Em frente ao <em>Quiosque 12.</em></h2></div>
+      <div style="display:flex;flex-direction:column;gap:22px">
+        <p class="lead">O prédio fica na orla da Praia do Morro, em Guarapari, em frente ao Quiosque 12. No térreo: Supermercado Extrabom, farmácia, banco, lotérica e distribuidora. É a nota mais alta do anúncio: 5,0 em localização.</p>
+        <div class="cta-row"><a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Av.%20Beira%20Mar%2C%201932%2C%20Praia%20do%20Morro%2C%20Guarapari%20-%20ES" target="_blank" rel="noopener">Abrir no Google Maps</a></div>
+      </div>
+    </div>
+    <div class="bay" id="bay">
+      <img src="beach/beach2.webp" alt="Vista aérea da baía da Praia do Morro, com a orla de prédios, o mar turquesa e o Morro da Pescaria" loading="lazy">
+      <span class="credit">Foto: Marcelo Moryan / MTur Destinos, domínio público, Wikimedia Commons</span>
+    </div>
+    <div class="walk" id="walk">
+      <div class="walk-head">
+        <p class="eyebrow">Do sofá à areia</p>
+        <h3>O caminho até a praia, <em>em cinco passos.</em></h3>
+      </div>
+      <svg class="feet" id="feet" viewBox="0 0 1000 96" aria-hidden="true"></svg>
+      <ol class="walk-steps">
+        <li style="--i:0"><figure><img src="img/p13.webp" alt="Varanda do apartamento com mesa e cadeiras" loading="lazy"><span class="n">1</span></figure><b>Sua varanda</b><span>Pegue a canga e o protetor solar.</span></li>
+        <li style="--i:1"><figure><img src="img/p22.webp" alt="Elevador do Ed. Leila" loading="lazy"><span class="n">2</span></figure><b>Elevador</b><span>Desça direto para o térreo.</span></li>
+        <li style="--i:2"><figure><img src="img/p1.webp" alt="Galeria comercial no térreo do prédio" loading="lazy"><span class="n">3</span></figure><b>Térreo</b><span>Extrabom, farmácia, banco, lotérica e distribuidora.</span></li>
+        <li style="--i:3"><figure><img src="beach/beach4.webp" alt="Orla da Praia do Morro com guarda-sóis na areia" loading="lazy"><span class="n">4</span></figure><b>Atravesse a rua</b><span>O Quiosque 12 fica bem em frente.</span></li>
+        <li style="--i:4"><figure><img src="beach/beach1.webp" alt="Areia e mar da Praia do Morro em dia de sol" loading="lazy"><span class="n">5</span></figure><b>Pé na areia</b><span>Bem-vindo à Praia do Morro.</span></li>
+      </ol>
+      <div class="walk-ground" aria-hidden="true"><i class="g-bld">prédio</i><i class="g-road">rua</i><i class="g-sand">areia</i><i class="g-sea">mar</i></div>
+    </div>
+    <div class="near">
+      <div><b>No térreo</b><span>Extrabom, farmácia, banco, lotérica e distribuidora</span></div>
+      <div><b>Atravessando a rua</b><span>Areia da Praia do Morro, em frente ao Quiosque 12</span></div>
+      <div><b>No prédio</b><span>Estacionamento gratuito, elevador e portaria 24h</span></div>
+      <div><b>Sem carro</b><span>Tudo o que você precisa a pé, como contam os hóspedes</span></div>
+    </div>
+    <div class="loc-pics">
+      <figure><img src="img/p2.webp" alt="Fachada do prédio com galeria comercial no térreo" loading="lazy"><figcaption>O prédio</figcaption></figure>
+      <figure><img src="img/p1.webp" alt="Galeria comercial no térreo do prédio" loading="lazy"><figcaption>Galeria no térreo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="amen aqua waved" aria-label="Comodidades">
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:22px"><p class="eyebrow">Comodidades</p><h2>Tudo pronto <em>para você.</em></h2></div>
+      <p class="lead" style="max-width:38ch">Cozinha completa para cozinhar no seu ritmo e um prédio com estrutura rara na orla.</p>
+    </div>
+    <div class="amen-grid">
+      <div class="am"><svg viewBox="0 0 32 32"><path d="M4 12a17 17 0 0 1 24 0M8 16.5a11 11 0 0 1 16 0M12 21a5 5 0 0 1 8 0"/><circle cx="16" cy="25" r="1.2"/></svg><b>Wi-Fi</b><span>Internet em todo o apartamento</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="2"/><circle cx="11" cy="11" r="2.5"/><circle cx="21" cy="11" r="2.5"/><path d="M5 17h22M10 22h12"/></svg><b>Cozinha completa</b><span>Fogão a gás, geladeira e micro-ondas</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><path d="M8 10h14v9a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6z"/><path d="M22 13h2a3 3 0 0 1 0 6h-2M12 4v3M16 4v3"/></svg><b>Cafeteira e liquidificador</b><span>Para o café antes da praia</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><path d="M5 12h22M8 12v14M24 12v14M5 8h22"/></svg><b>Mesa para seis</b><span>Pratos, copos e talheres</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><rect x="4" y="7" width="24" height="15" rx="1.5"/><path d="M12 26h8M16 22v4"/></svg><b>TV</b><span>Na sala e na suíte</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><circle cx="16" cy="14" r="2"/><path d="M16 12c-1-5 2-8 6-8-1 4-3 6-6 8M18 15c5 0 8 3 7 7-4-1-6-3-7-7M14 15c-4 3-8 3-10 0 3-3 7-2 10 0M16 16v12"/></svg><b>Ventilador de teto</b><span>Nos quartos e na sala</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><path d="M5 5h22M8 5v22M24 5v22M8 9c3 2 3 6 0 8M24 9c-3 2-3 6 0 8"/></svg><b>Cortinas blackout</b><span>Para dormir até tarde</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><path d="M16 4c4 6 7 10 7 14a7 7 0 0 1-14 0c0-4 3-8 7-14z"/></svg><b>Água quente</b><span>Nos dois banheiros</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><path d="M4 10c4 10 20 10 24 0M4 10V6M28 10V6M4 6l4 4M28 6l-4 4"/></svg><b>Rede na varanda</b><span>Para a tarde preguiçosa</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><rect x="7" y="4" width="18" height="24" rx="1.5"/><path d="M16 4v24M12 13l-2 2 2 2M20 13l2 2-2 2"/></svg><b>Elevador</b><span>Sem escadas com as malas</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="3"/><path d="M13 23V10h5a4 4 0 0 1 0 8h-5"/></svg><b>Estacionamento grátis</b><span>No próprio prédio, raro na orla</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><path d="M16 4l10 4v7c0 6-4 11-10 13-6-2-10-7-10-13V8z"/><path d="M12 16l3 3 5-6"/></svg><b>Portaria 24h</b><span>Portaria eletrônica e segurança</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><circle cx="22" cy="9" r="4"/><path d="M3 22c3-2 5-2 8 0s5 2 8 0 5-2 8 0M3 27c3-2 5-2 8 0s5 2 8 0 5-2 8 0"/></svg><b>Acesso à praia</b><span>Do outro lado da rua</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><path d="M4 8h24M8 8v4l-3 6h6l-3-6M20 8v3h6v8h-6z"/></svg><b>Varal</b><span>Para secar roupas de banho</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><rect x="6" y="4" width="20" height="24" rx="1.5"/><path d="M16 4v24M13 15v3M19 15v3"/></svg><b>Guarda-roupa</b><span>Com cabides para a temporada</span></div>
+      <div class="am"><svg viewBox="0 0 32 32"><path d="M12 10h8v16a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2zM14 10V6h4v4M18 6h5l2 2"/></svg><b>Extintor de incêndio</b><span>Segurança no apartamento</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="avaliacoes" aria-label="Avaliações">
+  <div class="wrap">
+    <div class="reviews-top">
+      <div style="display:flex;flex-direction:column;gap:30px"><p class="eyebrow">Avaliações</p><div class="score"><b>4,65</b><div><span class="stars">★★★★★</span><span>26 avaliações · 96% com 4 ou 5 estrelas</span></div></div></div>
+      <div class="bars">
+        <div class="br"><span>Localização</span><i style="--v:100%"></i><b>5,0</b></div>
+        <div class="br"><span>Check-in</span><i style="--v:96%"></i><b>4,8</b></div>
+        <div class="br"><span>Comunicação</span><i style="--v:96%"></i><b>4,8</b></div>
+        <div class="br"><span>Custo-benefício</span><i style="--v:94%"></i><b>4,7</b></div>
+        <div class="br"><span>Limpeza</span><i style="--v:92%"></i><b>4,6</b></div>
+        <div class="br"><span>Exatidão</span><i style="--v:92%"></i><b>4,6</b></div>
+      </div>
+    </div>
+    <div class="quotes">
+      <figure class="q big rv"><p>Amamos o apartamento, me senti em casa, tudo perto. Só descer, já estava no supermercado, farmácia, restaurantes perto. Praia só atravessar. Super recomendo.</p><footer><span><b>Rozane</b> · fev 2026</span><span class="s">★★★★★</span></footer></figure>
+      <figure class="q rv"><p>O apto estava extremamente limpo, uma ótima localização, bom chuveiro, tudo certo.</p><footer><span><b>Victória</b> · nov 2025</span><span class="s">★★★★</span></footer></figure>
+      <figure class="q rv"><p>Muito ótimo apartamento, arejado, em cima do mercado Extra, perto da praia, nem usa carro.</p><footer><span><b>Márcio</b> · out 2025</span><span class="s">★★★★★</span></footer></figure>
+      <figure class="q rv"><p>O apartamento é super espaçoso, bem localizado, cama da suíte confortável.</p><footer><span><b>Grasiela</b> · jan 2026</span><span class="s">★★★★</span></footer></figure>
+      <figure class="q rv"><p>O apto realmente é muito bom. Amplo, arejado e muito perto da praia e do supermercado.</p><footer><span><b>Jordânia</b> · dez 2025</span><span class="s">★★★★★</span></footer></figure>
+    </div>
+    <div class="cta-row" style="margin-top:40px;justify-content:center"><a class="btn btn-line" href="https://airbnb.com.br/h/leila201" target="_blank" rel="noopener">Ler as 26 avaliações no Airbnb</a></div>
+  </div>
+</section>
+
+<section class="host waved" aria-label="Anfitrião e perguntas frequentes">
+  <div class="wrap">
+    <div class="host-card rv">
+      <p class="eyebrow">Seu anfitrião</p>
+      <div class="host-id"><div class="avatar" aria-hidden="true">D</div><div><b>Douglas</b><span>Anfitrião no Airbnb há 4 anos</span></div></div>
+      <p class="lead">“O Douglas é super atencioso e está sempre pronto a responder e tirar dúvidas.” <span style="color:var(--ink)">— Grasiela, hóspede</span></p>
+      <div class="kv"><div><b>1 h</b><span>Tempo de resposta</span></div><div><b>4,8</b><span>Comunicação</span></div><div><b>Em mãos</b><span>Entrega da chave</span></div></div>
+    </div>
+    <div>
+      <p class="eyebrow" style="margin-bottom:24px">Perguntas frequentes</p>
+      <details><summary>Quantas pessoas cabem?</summary><p>Até 5 hóspedes: duas camas de casal, uma em cada quarto, e o sofá da sala.</p></details>
+      <details><summary>A praia é perto mesmo?</summary><p>O prédio fica de frente para o Quiosque 12 da Praia do Morro. É só atravessar a rua.</p></details>
+      <details><summary>Tem estacionamento?</summary><p>Sim, estacionamento gratuito no próprio prédio, um diferencial raro na orla.</p></details>
+      <details><summary>Como funciona o check-in?</summary><p>O check-in é feito pessoalmente, com entrega da chave em mãos e horário flexível. O checkout é até as 12h.</p></details>
+      <details><summary>Preciso de carro?</summary><p>Não. Supermercado Extrabom, farmácia, banco, lotérica e distribuidora ficam no térreo do prédio, e a praia fica do outro lado da rua.</p></details>
+      <details><summary>O que devo levar?</summary><p>Toalhas, roupa de cama e itens de higiene pessoal não estão inclusos. A cozinha tem panelas, pratos, talheres, cafeteira e liquidificador.</p></details>
+      <details><summary>Como faço a reserva?</summary><p>Pelo Airbnb, com pagamento protegido pela plataforma. Escolha as datas no anúncio e veja o preço exato.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final" aria-label="Reservar">
+  <div class="bg" id="finalbg"><img src="beach/beach3.webp" alt="Pôr do sol sobre a Praia do Morro" loading="lazy"></div>
+  <div class="wrap">
+    <p class="eyebrow light">Disponível no Airbnb</p>
+    <h2>Sua temporada começa <em>na areia.</em></h2>
+    <p class="lead">Escolha suas datas e veja o preço exato no anúncio. As melhores semanas da alta temporada costumam ir primeiro.</p>
+    <a class="btn btn-sun" href="https://airbnb.com.br/h/leila201" target="_blank" rel="noopener" style="--h:64px;padding:0 40px;font-size:13.5px">Ver disponibilidade <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+  <span class="credit">Foto: Marcelo Moryan / MTur Destinos, domínio público, Wikimedia Commons</span>
+</section>
+</main>
+
+<footer class="ft"><div class="wrap">
+  <div class="row"><span>Pé na Areia · Praia do Morro, Guarapari, ES</span><span>Reservas pelo Airbnb · airbnb.com.br/h/leila201</span></div>
+  <small>Fotos da Praia do Morro via Wikimedia Commons: “Praia do Morro 2026”, Gutoaz, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> (<a href="https://commons.wikimedia.org/wiki/File:Praia_do_Morro_2026.jpg" target="_blank" rel="noopener">fonte</a>) · Vista aérea, orla e pôr do sol: Marcelo Moryan / MTur Destinos, domínio público (<a href="https://commons.wikimedia.org/wiki/File:MarceloMoryan_PraiadoMorro_ES_(40015269105).jpg" target="_blank" rel="noopener">fonte</a>) · “Praia do Morro II”, Mariusm98, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> (<a href="https://commons.wikimedia.org/wiki/File:Praia_do_Morro_II.jpg" target="_blank" rel="noopener">fonte</a>) · “Orla da Praia do Morro”, Fabiojrsouza, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> (<a href="https://commons.wikimedia.org/wiki/File:Orla_da_Praia_do_Morro.jpg" target="_blank" rel="noopener">fonte</a>). Fotos do apartamento: arquivo do anfitrião.</small>
+</div></footer>
+
+<div class="stickbar" id="stick" aria-label="Reserva rápida"><div><b>A praia logo ali</b><span>★ 4,65 · 26 avaliações</span></div><a class="btn btn-sun" href="https://airbnb.com.br/h/leila201" target="_blank" rel="noopener">Ver datas</a></div>
+
+<div class="radio" id="radio" role="region" aria-label="Trilha sonora do site">
+  <span class="r-tip" id="rtip">Toque em qualquer lugar para ouvir a trilha da praia</span>
+  <button class="r-play" id="rplay" type="button" aria-label="Tocar a trilha" aria-pressed="false"><svg id="ricon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+  <div class="r-info"><small>Trilha da praia</small><b id="rtitle">Bossa da Praia</b></div>
+  <div class="r-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <button class="r-next" id="rnext" type="button" aria-label="Próxima música"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6v12l8.5-6zM16 6h2v12h-2z"/></svg></button>
+  <audio id="raudio" preload="none"></audio>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <img id="lbimg" alt="">
+  <button class="x" id="lbx" type="button" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="pv" id="lbp" type="button" aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <button class="nx" id="lbn" type="button" aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="ct" id="lbc"></div>
+</div>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = s => document.querySelector(s);
+  const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+
+  /* ---------- HERO: sequência em tela cheia (paisagem no desktop, retrato no celular) ---------- */
+  // quadros empacotados em folhas 4x3 (12 por arquivo): poucas requisições, carga rápida
+  const SETS = { d: { dir: 'tourds', n: 228, fw: 1360, fh: 765 }, m: { dir: 'tourms', n: 228, fw: 720, fh: 1280 } };
+  const PER = 12, COLS = 4;
+  const CAPS = [['A baía', 'PRAIA DO MORRO', 0], ['A orla', 'PRÉDIO NA ORLA', .19], ['A varanda', '01 · VARANDA', .368], ['A sala', '02 · SALA DE ESTAR', .495], ['A mesa', '03 · SALA DE JANTAR', .605], ['A suíte', '04 · SUÍTE', .71], ['A cozinha', '05 · COZINHA', .816], ['Sua varanda', '06 · VARANDA', .895]];
+  const seq = $('#seq'), sctx = seq.getContext('2d');
+  let set, sheets = [], cur = -1, want = 0;
+  function pickSet() {
+    const s = innerWidth / innerHeight > 1 ? SETS.d : SETS.m;
+    if (s !== set) { set = s; sheets = new Array(Math.ceil(s.n / PER)); preload(); }
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    seq.width = Math.round(innerWidth * dpr); seq.height = Math.round(innerHeight * dpr); cur = -1;
+  }
+  function loadSheet(k, s, tries = 0) {
+    return new Promise(ok => {
+      const im = new Image(); im.decoding = 'async';
+      im.onload = () => { if (s === set) { sheets[k] = im; cur = -1; } ok(); };
+      im.onerror = () => { if (tries < 3 && s === set) setTimeout(() => loadSheet(k, s, tries + 1).then(ok), 800 * (tries + 1)); else ok(); };
+      im.src = `${s.dir}/s${String(k).padStart(2, '0')}.jpg`;
+    });
+  }
+  async function preload() {
+    const s = set, n = sheets.length; await loadSheet(0, s);
+    const order = []; for (let k = 1; k < n; k++) order.push(k);
+    for (let i = 0; i < order.length; i += 4) { if (s !== set) return; await Promise.all(order.slice(i, i + 4).map(k => loadSheet(k, s))); }
+  }
+  function nearest(i) {
+    const k0 = Math.floor(i / PER);
+    for (let d = 0; d < sheets.length; d++) {
+      if (sheets[k0 - d]) return [k0 - d, d ? PER - 1 : i % PER];
+      if (sheets[k0 + d]) return [k0 + d, d ? 0 : i % PER];
+    }
+    return null;
+  }
+  function draw() {
+    if (want === cur) return; const hit = nearest(want); if (!hit) return;
+    const [k, j] = hit, im = sheets[k], fw = set.fw, fh = set.fh, sx = (j % COLS) * fw, sy = Math.floor(j / COLS) * fh;
+    const cw = seq.width, ch = seq.height, r = Math.max(cw / fw, ch / fh), w = fw * r, h = fh * r;
+    sctx.drawImage(im, sx, sy, fw, fh, (cw - w) / 2, (ch - h) / 2, w, h);
+    cur = (k === Math.floor(want / PER)) ? want : -1;
+  }
+  pickSet(); addEventListener('resize', pickSet);
+
+  const hero = $('#hero'), title = $('#title'), welcome = $('#welcome'), prog = $('#prog'), capt = $('#capt'), capn = $('#capn'), nav = $('#nav'), stick = $('#stick');
+  let ci = -1;
+  function heroScroll() {
+    const r = hero.getBoundingClientRect(), span = r.height - innerHeight, p = clamp(-r.top / span);
+    want = Math.min(set.n - 1, Math.round(p * (set.n - 1)));
+    prog.style.width = (p * 100).toFixed(1) + '%';
+    const tp = clamp(p / .12);
+    title.style.opacity = (1 - tp).toFixed(3);
+    title.style.transform = reduce ? '' : `translateY(${(-tp * 80).toFixed(1)}px) scale(${(1 + tp * .18).toFixed(3)})`;
+    welcome.style.opacity = clamp((p - .92) / .06).toFixed(3);
+    let k = 0; CAPS.forEach((c, i) => { if (p >= c[2]) k = i; });
+    if (p < .02) { capn.textContent = 'ROLE PARA ENTRAR'; capt.textContent = 'A baía'; ci = -1; }
+    else if (k !== ci) { ci = k; capt.textContent = CAPS[k][0]; capn.textContent = CAPS[k][1]; }
+    nav.classList.toggle('solid', p >= 1);
+    document.body.classList.toggle('inhero', p < .98);
+    const gr = gal.getBoundingClientRect(), inGal = gr.top < innerHeight * .5 && gr.bottom > innerHeight * .5;
+    stick.classList.toggle('on', p >= 1 && !inGal && (innerHeight + scrollY) < document.body.scrollHeight - 200);
+  }
+
+  /* ---------- sombras de folhas de coqueiro ---------- */
+  function frond(x, y, len, ang, bend, side) {
+    let d = '', px = x, py = y;
+    const n = 26;
+    for (let i = 1; i <= n; i++) {
+      const t = i / n, a = ang + bend * t * t, step = len / n;
+      const nx = px + Math.cos(a) * step, ny = py + Math.sin(a) * step;
+      const leaf = len * .34 * Math.sin(Math.PI * Math.min(1, t * 1.15)) + 8;
+      for (const s of [-1, 1]) {
+        const la = a + s * (1.05 - t * .35), tipx = nx + Math.cos(la + s * .25) * leaf, tipy = ny + Math.sin(la + s * .25) * leaf + leaf * .18;
+        d += `M${px.toFixed(1)} ${py.toFixed(1)} Q${(nx + Math.cos(la) * leaf * .45).toFixed(1)} ${(ny + Math.sin(la) * leaf * .45).toFixed(1)} ${tipx.toFixed(1)} ${tipy.toFixed(1)} L${nx.toFixed(1)} ${ny.toFixed(1)}Z`;
+      }
+      d += `M${px.toFixed(1)} ${py.toFixed(1)}L${nx.toFixed(1)} ${ny.toFixed(1)}`;
+      px = nx; py = ny;
+    }
+    return `<path d="${d}" fill="#26332b" stroke="#26332b" stroke-width="3"/>`;
+  }
+  $('#palms').innerHTML =
+    `<g style="transform-origin:1040px -40px">${frond(1040, -40, 520, 2.35, .6) + frond(1040, -40, 460, 2.0, .9) + frond(1040, -40, 380, 1.65, 1.1)}</g>` +
+    `<g style="transform-origin:-60px 640px">${frond(-60, 640, 430, -.35, .7) + frond(-60, 640, 380, .15, .6)}</g>` +
+    `<g style="transform-origin:1060px 1060px">${frond(1060, 1060, 420, 3.6, .5) + frond(1060, 1060, 360, 4.0, .4)}</g>`;
+
+  /* ---------- palavras que acendem ---------- */
+  const big = $('#big'), hl = ['térreo.', 'areia', 'Praia', 'do', 'Morro.'];
+  big.innerHTML = big.textContent.split(' ').map(w => `<span class="w${hl.includes(w) ? ' hl' : ''}">${w}</span>`).join(' ');
+  const words = [...big.querySelectorAll('.w')];
+  function lightWords() {
+    const r = big.getBoundingClientRect(), p = clamp((innerHeight * .85 - r.top) / (r.height + innerHeight * .35));
+    const n = reduce ? words.length : Math.round(p * words.length); words.forEach((w, i) => w.classList.toggle('on', i < n));
+  }
+
+  /* ---------- parallax e tilt ---------- */
+  const pars = [...document.querySelectorAll('[data-par]')], bgs = [$('#seabg'), $('#finalbg')], bayImg = document.querySelector('#bay img'), postcards = [...document.querySelectorAll('.pc')];
+  function parallax() {
+    if (reduce) return; const h = innerHeight;
+    for (const el of pars) {
+      const r = el.parentElement.getBoundingClientRect(); if (r.bottom < -100 || r.top > h + 100) continue;
+      const k = (r.top + r.height / 2 - h / 2) / h;
+      el.style.setProperty('--y', (k * -40).toFixed(1) + 'px'); el.style.setProperty('--s', (1.12 - clamp(1 - Math.abs(k)) * .06).toFixed(3));
+    }
+    for (const bg of bgs) { const r = bg.parentElement.getBoundingClientRect(); if (r.bottom < 0 || r.top > h) continue; bg.style.transform = `translateY(${((r.top / h) * 10).toFixed(2)}%)`; }
+    for (const pc of postcards) { const r = pc.getBoundingClientRect(); if (r.bottom < 0 || r.top > h) continue; pc.style.setProperty('--py', ((r.top + r.height / 2 - h / 2) / h * -50 * +pc.dataset.k).toFixed(1) + 'px'); }
+    const br = bayImg.parentElement.getBoundingClientRect(); if (br.top < h && br.bottom > 0) bayImg.style.setProperty('--s', (1.16 - clamp((h - br.top) / (h + br.height)) * .16).toFixed(3));
+  }
+  if (!reduce && matchMedia('(hover:hover)').matches) document.querySelectorAll('[data-tilt]').forEach(el => {
+    el.addEventListener('mousemove', e => { const r = el.getBoundingClientRect(); el.style.setProperty('--ry', ((e.clientX - r.left) / r.width - .5) * 10 + 'deg'); el.style.setProperty('--rx', -((e.clientY - r.top) / r.height - .5) * 8 + 'deg'); });
+    el.addEventListener('mouseleave', () => { el.style.setProperty('--ry', '0deg'); el.style.setProperty('--rx', '0deg'); });
+  });
+
+  /* ---------- notebook que abre ---------- */
+  const lap = $('#lap');
+  function lapScroll() { if (reduce) return; const r = lap.getBoundingClientRect(), h = innerHeight; lap.style.setProperty('--open', clamp((h - r.top) / (h * .7)).toFixed(3)); }
+
+  /* ---------- galeria em anel 3D ---------- */
+  const G = [['p14', 'Varanda'], ['p38', 'Sala'], ['p8', 'Suíte'], ['p16', 'Varanda'], ['p7', 'Suíte'], ['p11', 'Segundo quarto'], ['p17', 'Sala'], ['p10', 'Banheiro'], ['p13', 'Vista'], ['p24', 'Suíte'], ['p12', 'Segundo quarto'], ['p9', 'Banheiro'], ['p15', 'Varanda'], ['p49', 'Sala de jantar'], ['p46', 'Cozinha'], ['p5', 'Portaria'], ['p4', 'Hall'], ['p22', 'Elevador']];
+  const ring = $('#ring'), gal = $('#galeria');
+  ring.innerHTML = G.map((g, i) => `<button type="button" data-i="${i}" aria-label="Ampliar foto: ${g[1]}"><img src="img/${g[0]}.webp" alt="${g[1]}" decoding="async"><span>${g[1]}</span></button>`).join('');
+  const cards = [...ring.children];
+  let radius = 0;
+  function layoutRing() {
+    const head = document.querySelector(".gal-head").offsetHeight, h = Math.max(240, Math.min(innerHeight * (innerHeight > innerWidth ? .44 : .56), innerHeight - head - 170, innerWidth * .9, 620)), w = h * .74;
+    document.querySelector(".ring-wrap").style.height = (h + 50) + "px"; radius = Math.round((w + 26) / (2 * Math.tan(Math.PI / G.length)));
+    cards.forEach((c, i) => { c.style.setProperty('--w', w + 'px'); c.style.setProperty('--h', h + 'px'); c.style.transform = `rotateY(${i * 360 / G.length}deg) translateZ(${radius}px)`; });
+    galScroll();
+  }
+  function galScroll() {
+    const r = gal.getBoundingClientRect(), p = clamp(-r.top / (r.height - innerHeight));
+    ring.style.transform = `translateZ(${-radius}px) rotateX(-6deg) rotateY(${(-p * 360 * 1.15).toFixed(2)}deg)`;
+  }
+  addEventListener('resize', layoutRing); layoutRing();
+
+  function onScroll() { heroScroll(); lightWords(); parallax(); lapScroll(); galScroll(); }
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  (function tick() { draw(); requestAnimationFrame(tick); })();
+
+  /* ---------- reveals e contadores ---------- */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+  const fmt = (v, d) => v.toFixed(d).replace('.', ',');
+  const co = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting || reduce) return; co.unobserve(e.target);
+    const el = e.target, to = +el.dataset.count, d = +el.dataset.dec, t0 = performance.now();
+    (function step(t) { const k = Math.min(1, (t - t0) / 1400); el.firstChild.nodeValue = fmt(to * (1 - Math.pow(1 - k, 3)), d); if (k < 1) requestAnimationFrame(step); else el.firstChild.nodeValue = fmt(to, d); })(t0);
+  }), { threshold: .6 });
+  document.querySelectorAll('[data-count]').forEach(el => co.observe(el));
+  /* pegadas na areia */
+  (function feet() {
+    const svg = $('#feet'); if (!svg) return;
+    const foot = (x, y, a, left) => `<g class="print" style="--d:${(x / 1000 * 2.2).toFixed(2)}s" transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${a.toFixed(1)}) scale(1.55,${left ? -1.55 : 1.55})"><ellipse cx="0" cy="0" rx="7.5" ry="4.3"/><ellipse cx="-9.5" cy="0.6" rx="3.6" ry="3.2"/><circle cx="8.6" cy="-2.6" r="1.6"/><circle cx="9.8" cy="0" r="1.3"/><circle cx="9.2" cy="2.3" r="1.1"/></g>`;
+    let out = '';
+    for (let i = 0; i < 20; i++) {
+      const x = 30 + i * 49, y = 48 + Math.sin(x / 120) * 16, dy = Math.cos(x / 120) * 16 / 120;
+      const a = Math.atan(dy) * 180 / Math.PI, side = i % 2 ? 1 : -1;
+      out += foot(x, y + side * 12, a, side > 0);
+    }
+    svg.innerHTML = out;
+    new IntersectionObserver((es, ob) => es.forEach(e => { if (e.isIntersecting) { $('#walk').classList.add('in'); ob.disconnect(); } }), { threshold: .3 }).observe($('#walk'));
+    if (reduce) $('#walk').classList.add('in');
+  })();
+  const lift = $('#liftnum');
+  new IntersectionObserver((es, ob) => es.forEach(e => {
+    if (!e.isIntersecting || reduce) return; ob.disconnect();
+    ['3', '2', '1', 'T'].forEach((d, i) => setTimeout(() => { lift.textContent = d; }, i * 450));
+  }), { threshold: .8 }).observe(lift);
+
+  /* ---------- vídeo ---------- */
+  const vid = $('#vid'), sound = $('#sound'), soundt = $('#soundt'), sw = $('#sw');
+  sound.addEventListener('click', () => {
+    vid.muted = !vid.muted; if (!vid.muted) { vid.currentTime = 0; vid.play().catch(() => {}); }
+    sound.setAttribute('aria-pressed', String(!vid.muted)); soundt.textContent = vid.muted ? 'Ativar som' : 'Som ligado';
+    sw.setAttribute('d', vid.muted ? 'M17 9l4 6M21 9l-4 6' : 'M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11');
+  });
+  new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) vid.play().catch(() => {}); else vid.pause(); }), { threshold: .35 }).observe(vid);
+
+  /* ---------- trilha da praia: começa no primeiro toque ---------- */
+  const TRACKS = [['audio/bossa.mp3', 'Bossa da Praia'], ['audio/chill.mp3', 'Fim de Tarde'], ['audio/calm.mp3', 'Violão e Ondas']];
+  const radio = $('#radio'), ra = $('#raudio'), rplay = $('#rplay'), ricon = $('#ricon'), rtitle = $('#rtitle');
+  const PLAY = '<path d="M8 5v14l11-7z"/>', PAUSE = '<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>';
+  let ti = 0, wanted = false, fadeT = 0;
+  const store = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+  function loadTrack(i) { ti = (i + TRACKS.length) % TRACKS.length; ra.src = TRACKS[ti][0]; rtitle.textContent = TRACKS[ti][1]; }
+  function fadeTo(v, ms, done) {
+    cancelAnimationFrame(fadeT); const v0 = ra.volume, t0 = performance.now();
+    (function step(t) { const k = Math.min(1, (t - t0) / ms); ra.volume = v0 + (v - v0) * k; if (k < 1) fadeT = requestAnimationFrame(step); else done && done(); })(t0);
+  }
+  function setUI(on) { radio.classList.toggle('playing', on); rplay.setAttribute('aria-pressed', String(on)); rplay.setAttribute('aria-label', on ? 'Pausar a trilha' : 'Tocar a trilha'); ricon.innerHTML = on ? PAUSE : PLAY; }
+  function play() { wanted = true; radio.classList.remove('tip'); if (!ra.src) loadTrack(ti); ra.volume = 0; ra.play().then(() => { setUI(true); fadeTo(.4, 1800); }).catch(() => setUI(false)); }
+  function pause(remember) { wanted = false; if (remember) store.set('pna-radio-off', '1'); fadeTo(0, 500, () => ra.pause()); setUI(false); }
+  rplay.addEventListener('click', e => { e.stopPropagation(); if (ra.paused || !wanted) { store.set('pna-radio-off', '0'); play(); } else pause(true); });
+  $('#rnext').addEventListener('click', e => { e.stopPropagation(); loadTrack(ti + 1); store.set('pna-radio-off', '0'); play(); });
+  ra.addEventListener("ended", () => { loadTrack(ti + 1); play(); });
+  loadTrack(0);
+  const firstTouch = e => {
+    removeEventListener('pointerdown', firstTouch, true); removeEventListener('keydown', firstTouch, true);
+    if (radio.contains(e.target) || store.get('pna-radio-off') === '1' || reduce) return;
+    play();
+  };
+  addEventListener('pointerdown', firstTouch, true); addEventListener('keydown', firstTouch, true);
+  if (store.get('pna-radio-off') !== '1') setTimeout(() => { if (!wanted) radio.classList.add('tip'); setTimeout(() => radio.classList.remove('tip'), 6000); }, 2500);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) ra.pause(); else if (wanted) ra.play().catch(() => {}); });
+  // o filme do notebook com som tem prioridade
+  $('#sound').addEventListener('click', () => { if (!vid.muted && wanted) { pause(false); radio.dataset.resume = '1'; } else if (vid.muted && radio.dataset.resume) { delete radio.dataset.resume; play(); } });
+
+  /* ---------- lightbox ---------- */
+  const lb = $('#lb'), lbimg = $('#lbimg'), lbc = $('#lbc'); let li = 0, last = null;
+  function show(i) { li = (i + G.length) % G.length; lbimg.src = `img/${G[li][0]}.webp`; lbimg.alt = G[li][1]; lbc.textContent = `${G[li][1].toUpperCase()} · ${li + 1} / ${G.length}`; }
+  ring.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; last = b; show(+b.dataset.i); lb.hidden = false; $('#lbx').focus(); document.body.style.overflow = 'hidden'; });
+  const close = () => { lb.hidden = true; document.body.style.overflow = ''; last && last.focus(); };
+  $('#lbx').onclick = close; $('#lbp').onclick = () => show(li - 1); $('#lbn').onclick = () => show(li + 1);
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  addEventListener('keydown', e => { if (lb.hidden) return; if (e.key === 'Escape') close(); if (e.key === 'ArrowLeft') show(li - 1); if (e.key === 'ArrowRight') show(li + 1); });
+  let tx = 0; lb.addEventListener('touchstart', e => tx = e.touches[0].clientX, { passive: true });
+  lb.addEventListener('touchend', e => { const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) show(li + (dx < 0 ? 1 : -1)); });
+})();
+</script>
+
+</body></html>
